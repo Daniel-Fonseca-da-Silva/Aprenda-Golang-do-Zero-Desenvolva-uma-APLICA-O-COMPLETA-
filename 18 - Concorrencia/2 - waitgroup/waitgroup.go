@@ -18,6 +18,7 @@ func main() {
 
 	go func() {
 		escrever("Programando no go :D")
+		waitGroup.Done()
 	}()
 
 	go func() {
@@ -27,6 +28,7 @@ func main() {
 
 	go func() {
 		escrever("Programando na Europa")
+		waitGroup.Done()
 	}()
 
 	waitGroup.Wait()
